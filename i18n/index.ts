@@ -6,7 +6,6 @@ import translationEn from "./locales/en-US/translation.json";
 import translationPt from "./locales/pt-BR/translation.json";
 import translationZh from "./locales/zh-CN/translation.json";
 
-
 // Configuração das traduções
 const resources = {
   "pt_BR": { translation: translationPt },
@@ -19,7 +18,7 @@ const initI18n = async () => {
 
   if (!savedLanguage) {
     const locales = Localization.getLocales();
-    savedLanguage = locales.length > 0 ? locales[0].languageTag : "en-US"; // Default to English if no locale found
+    savedLanguage = locales.length > 0 ? locales[0].languageTag : "en_US"; // Default to English if no locale found
   }
 
   i18n.use(initReactI18next).init({

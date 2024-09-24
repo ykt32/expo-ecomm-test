@@ -11,7 +11,7 @@ import "react-native-reanimated";
 
 import { Provider } from "react-redux";
 import "@/i18n";
-import { LanguageProvider } from "@/context/languageContext";
+import { LanguageProvider } from "@/context/LanguageContext";
 import { useColorScheme } from "@/hooks/useColorScheme";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
